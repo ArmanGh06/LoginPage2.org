@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Login Page</title>
+  <style>
+    /* Style the body element */
+    body {
+    font-family: 'Courier New', Courier, monospace;
+    /* Create a linear gradient background that alternates between grey and transparent */
+    background-image: linear-gradient(to right, rgb(0, 224, 134) 1px, transparent 1px), linear-gradient(to bottom, rgb(0, 224, 134) 1px, transparent 1px);
+    /* Set the size of the squares*/
+    background-size: 96px 96px;
+    background-color: rgb(20, 20, 20);
+  }
+
+    /* Style the login form container */
+    .login-form {
+      width: 420px;
+      height: 420px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* Add a box shadow and a border radius */
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      /* Add a white background with some transparency */
+      background: rgb(22, 22, 22)
+    }
+
+    /* Style the login form title */
+    .login-form h1 {
+      text-align: center;
+      color: rgb(0, 245, 0);
+      font-weight: normal;
+      margin-top: 40px;
+    }
+
+    /* Style the input fields */
+    .login-form input {
+      display: block;
+      width: 80%;
+      margin: 20px auto;
+      padding: 15px;
+      border: none;
+      outline: none;
+      /* Add a bottom border that changes color on focus */
+      border-bottom: 5px solid rgba(220,220,220);
+      transition: 0.3s;
+    }
+
+    /* Change the border color on focus */
+    .login-form input:focus {
+      border-bottom-color: rgba(22,176,193);
+    }
+
+    /* Style the login button */
+    .login-form button {
+      display: block;
+      width: 80%;
+      margin: 20px auto;
+      padding: 15px;
+      border: none;
+      outline: none;
+      /* Add a gradient background and a box shadow */
+      background: linear-gradient(45deg, rgba(0,155,8), rgba(22,176,193));
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      /* Add a scale effect on hover */
+      transition: 0.3s;
+    }
+
+    /* Scale the button on hover */
+    .login-form button:hover {
+      transform: scale(1.1);
+    }
+    
+    /* Style the forget password and sign up links */
+    .login-form a {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      text-align: left;
+      color: rgb(210, 210, 210);
+      text-decoration: none;
+      /* Add an underline effect on hover */
+      transition: 0.3s;
+    }
+
+    .login-form b {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      text-align: left;
+      color: rgb(0, 220, 0);
+      text-decoration: none;
+      /* Add an underline effect on hover */
+      transition: 0.3s;
+    }
+
+        /* Underline the link on hover */
+     .login-form a:hover {
+      text-decoration: underline;
+    }
+
+     /* Underline the link on hover */
+     .login-form b:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-form">
+    <h1>Sign In</h1>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button>Login</button>
+      <a href="#">Forgot password</a>
+      <b href="#">Sign up</b>
+    </form>
+  </div>
+</body>
+</html>
